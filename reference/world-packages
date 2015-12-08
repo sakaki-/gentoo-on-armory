@@ -1,0 +1,15 @@
+app-admin/logrotate-3.9.1-r1
+app-admin/syslog-ng-3.7.2
+app-misc/screen-4.3.1-r1
+app-portage/eix-0.30.11
+app-portage/euses-2.5.9
+app-portage/gentoolkit-0.3.0.9-r2
+app-portage/mirrorselect-2.2.2-r2
+net-misc/chrony-2.2-r1
+net-misc/dhcpcd-6.9.0
+sys-apps/hwinfo-21.4
+sys-apps/mlocate-0.26-r1
+sys-apps/usbutils-008-r1
+sys-devel/bc-1.06.95-r1
+sys-fs/dosfstools-3.0.28
+sys-process/cronie-1.5.0

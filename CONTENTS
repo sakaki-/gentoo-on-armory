@@ -1,0 +1,25 @@
+The following is a brief description of the files in the project:
+
+.gitignore
+  Specifies files to ignore under the git version control system
+CONTENTS
+  This file
+COPYING
+  GPL 3.0 license text
+README.md
+  Brief description of the project, image installation and use
+configs/usb_armory_config
+  The .config used to build the kernel supplied on the image (based
+  on the Arch Linux ARM kernel originally, see
+  http://archlinuxarm.org/platforms/armv7/freescale/usb-armory)
+reference/installed-packages
+  Full list of installed packages, from eix-installed all; the version numbers
+  are Gentoo ebuilds, but they generally map 1-to-1 onto upstream versions
+reference/usb_armory_fstab
+  The /etc/fstab from the bootable image; has a single main parititon
+  and a swap file within it
+reference/usb_armory_make.conf
+  The /etc/portage/make.conf file from the image
+reference/world-packages
+  The explicit /var/lib/portage/world set from the image, annotated
+  with ebuild version numbers (subset of eix-installed all output)
