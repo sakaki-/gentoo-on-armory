@@ -152,7 +152,7 @@ armory ~ # cd /usr/src/linux
 ```
 Next, grab the configuration from the current kernel:
 ```
-armory linux # zcat /proc/config.gz .config
+armory linux # zcat /proc/config.gz > .config
 ```
 then, following the outline of the instructions given [here](https://github.com/inversepath/usbarmory/wiki/Preparing-a-bootable-microSD-image), proceed as follows:
 ```
