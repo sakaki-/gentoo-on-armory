@@ -133,7 +133,7 @@ Have fun! ^-^
 ## Miscellaneous Points
 
 * For simplicity, the image uses a single `ext4` root partition. To allow large packages (such as `gcc`) to be built without running out of memory, a 512 KiB swapfile has been set up at `/var/cache/swap/swap1`.
-* Per the instructions on Inverse Path's USB armory [wiki](https://github.com/inversepath/usbarmory/wiki/Preparing-a-bootable-microSD-image), the bootloader on the image is a build of `U-Boot 2015.10` with the `usbarmory_config`, which has been `dd`-d into the start of the device image.
+* Per the instructions on Inverse Path's USB armory [wiki](https://github.com/inversepath/usbarmory/wiki/Preparing-a-bootable-microSD-image), the bootloader on the image is a build of `U-Boot 2015.10` with the `usbarmory_config`, which has been `dd`-d into the start of the device image (incidentally, the `u-boot.imx` used in the project may be downloaded [here](https://github.com/sakaki-/gentoo-on-armory/releases/tag/1.0.0)).
 * If you have a microSD card larger than the minimum 8GB, after writing the image you can easily extend the size of the root partition (using `fdisk` and `resize2fs`), so you have more space to work in. See [these instructions](http://geekpeek.net/resize-filesystem-fdisk-resize2fs/), for example. Alternatively, you can set up (e.g.) a `/home` partition on the free space, and add this to the `/etc/fstab` (the image's `/etc/fstab` may be viewed [here](https://github.com/sakaki-/gentoo-on-armory/blob/master/reference/usb_armory_fstab)).
 * `PermitRootLogin yes` has explicitly been set in `/etc/ssh/sshd_config` (as not allowed by default from `openssh` v7).
 
