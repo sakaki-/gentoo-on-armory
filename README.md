@@ -150,6 +150,11 @@ armory ~ # eselect kernel set 1
    (replace '1' in the above command with the number of the desired kernel from the list)
 armory ~ # cd /usr/src/linux
 ```
+If you haven't already installed `u-boot-tools`, do do now:
+```
+armory ~ # emerge --ask --verbose u-boot-tools
+   (confirm when prompted)
+```
 Next, grab the configuration from the current kernel:
 ```
 armory linux # zcat /proc/config.gz > .config
