@@ -89,7 +89,7 @@ The armory will also bring up an Ethernet-over-USB connection, with (armory-side
 ... additional output suppressed ...
 ```
 
-Your output will most likely differ, but you are looking for an interface whose name starts with 'enp' and which contains a 'u'; here it is `enp13s0u2`. Now we need to set up our (PC) end of the connection (to have address `10.0.0.2`), and allow IPv4 traffic from the armory to be forwarded to and from the PC's external internet interface. To do this (more details [here](https://github.com/inversepath/usbarmory/wiki/Host-communication)), issue (on your PC):
+Your output will most likely differ, but you are looking for an interface whose name starts with 'enp' and which contains a 'u'; here it is `enp13s0u2` (note that on some systems, however, the interface may show up as `usb0`, in which case modify the following instructions accordingly). Now we need to set up our (PC) end of the connection (to have address `10.0.0.2`), and allow IPv4 traffic from the armory to be forwarded to and from the PC's external internet interface. To do this (more details [here](https://github.com/inversepath/usbarmory/wiki/Host-communication)), issue (on your PC):
 ```
 # ip addr add 10.0.0.2/24 brd + dev enp13s0u2
 # iptables -A FORWARD -s 10.0.0.1 -j ACCEPT
