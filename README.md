@@ -21,7 +21,7 @@ USB armory | 1.0.0 | [genarmimg.xz](https://github.com/sakaki-/gentoo-on-armory/
 To try this out, you will need:
 * A [microSD card](https://en.wikipedia.org/wiki/Secure_Digital) of at least 8GB capacity (the *compressed* (.xz) image is 225MiB, the *uncompressed* image is 14,823,424 (512 byte) sectors = 7,589,592,576 bytes). A list of known-good microSD cards may be viewed [here](https://github.com/inversepath/usbarmory/wiki/microSD-compatibility). Depending on the slots available on your PC, you may also need an adaptor to allow the microSD card to be plugged in (to write the image to it initially).
 * A USB armory (obviously!). At the moment, only the mk1 (production) release hardware is supported.
-* A PC to decompress the image and write it to the USB key. This is most easily done on a Linux machine of some sort, but tools are also available for Windows (see [here](http://tukaani.org/xz/) and [here](http://sourceforge.net/projects/win32diskimager/), for example). In the instructions below I'm going to assume you're using Linux.
+* A PC to decompress the image and write it to the microSD card. This is most easily done on a Linux machine of some sort, but tools are also available for Windows (see [here](http://tukaani.org/xz/) and [here](http://sourceforge.net/projects/win32diskimager/), for example). In the instructions below I'm going to assume you're using Linux.
 
 ## Downloading and Writing the Image
 
