@@ -4,6 +4,7 @@ Bootable Gentoo image for the USB armory, with Linux 4.3.0
 ## Description
 
 <img src="https://raw.githubusercontent.com/sakaki-/resources/master/inversepath/armory/usb_armory.jpg" alt="USB armory" width="250px" align="right"/>
+
 This project contains a bootable, microSD card Gentoo image for the [USB armory from Inverse Path](http://inversepath.com/usbarmory.html) (a Cortex-A8 based computer in a USB-stick form factor).
 
 The kernel used in the image is **4.3.0** from gentoo-sources. The `.config` used for the kernel may be found [here](https://github.com/sakaki-/gentoo-on-armory/blob/master/configs/usb_armory_config) in the git archive (I have based it on the kernel config used by the [ArchLinux ARM image for armory](http://archlinuxarm.org/platforms/armv7/freescale/usb-armory)). The image uses OpenRC as its init system, but you should be able to set up systemd easily enough should you wish, as the necessary kernel settings are present.
